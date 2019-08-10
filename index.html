@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <main>
+        <span class="lousa" id="lousa" pattern="([0-9]{3})">
+
+        </span>
+        <div>
+            <button class="botao-excluir" onclick="excluir1()">C</button>
+            <button class="botao-excluir" onclick="excluir2()">Del</button>
+        </div>
+        <div>
+            <button class="botao" onclick="adicionar7()">7</button>
+            <button class="botao" onclick="adicionar8()">8</button>
+            <button class="botao" onclick="adicionar9()">9</button>
+            <button class="botao" onclick="adicionarX()">*</button>
+        </div>
+        <div>
+            <button class="botao" onclick="adicionar4()">4</button>
+            <button class="botao" onclick="adicionar5()">5</button>
+            <button class="botao" onclick="adicionar6()">6</button>
+            <button class="botao" onclick="adicionardiv()">/</button>
+        </div>
+        <div>
+            <button class="botao" onclick="adicionar1()">1</button>
+            <button class="botao" onclick="adicionar2()">2</button>
+            <button class="botao" onclick="adicionar3()">3</button>
+            <button class="botao" onclick="adicionarmais()">+</button>
+        </div>
+        <div>
+            <button class="botao" onclick="adicionarvir()">,</button>
+            <button class="botao" onclick="adicionar0()">0</button>
+            <button class="botao" onclick="igual()">=</button>
+            <button class="botao" onclick="adicionarmenos()">-</button>
+        </div>
+    </main>
+    <script>
+        function adicionar1(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '1';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionar2(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '2';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionar3(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '3';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionar4(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '4';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionar5(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '5';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionar6(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '6';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionar7(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '7';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionar8(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '8';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionar9(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '9';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionar0(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '0';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionarX(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '*';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionarmais(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '+';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionardiv(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '/';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionarmenos(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '-';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function adicionarvir(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = ',';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+        function igual(){
+            var $lousa = document.querySelector('.lousa');
+            htmlnovo = '=';
+            $lousa.insertAdjacentHTML('beforeend', htmlnovo);
+        }
+    </script>
+</body>
+</html>
